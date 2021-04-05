@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Shared\MaterialBlazor.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\" />
+  </ItemGroup>
+
 </Project>

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialBlazor.Server", "MaterialBlazor\Server\MaterialBlazor.Server.csproj", "{B17E3F70-02BE-4805-B6EE-CB988D7A9B9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialBlazor.Server", "MaterialBlazor\Server\MaterialBlazor.Server.csproj", "{B17E3F70-02BE-4805-B6EE-CB988D7A9B9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialBlazor.Client", "MaterialBlazor\Client\MaterialBlazor.Client.csproj", "{33F8A9E2-30B7-45E4-BF51-65B22790B5A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialBlazor.Client", "MaterialBlazor\Client\MaterialBlazor.Client.csproj", "{33F8A9E2-30B7-45E4-BF51-65B22790B5A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialBlazor.Shared", "MaterialBlazor\Shared\MaterialBlazor.Shared.csproj", "{CE2E56FF-038E-4718-BFE6-A06FD55244D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialBlazor.Shared", "MaterialBlazor\Shared\MaterialBlazor.Shared.csproj", "{CE2E56FF-038E-4718-BFE6-A06FD55244D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

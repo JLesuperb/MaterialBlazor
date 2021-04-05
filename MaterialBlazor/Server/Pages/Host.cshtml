@@ -1,5 +1,10 @@
+﻿@page
+@model MaterialBlazor.Server.Pages.HostModel
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -9,16 +14,19 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="MaterialBlazor.Client.styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">Loading...</div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 

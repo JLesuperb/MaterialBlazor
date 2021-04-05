@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Linq;
 
 namespace MaterialBlazor.Server
 {
@@ -19,36 +17,35 @@ namespace MaterialBlazor.Server
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection _Service)
         {
-
-            services.AddControllersWithViews();
-            services.AddRazorPages();
+            _Service.AddControllersWithViews();
+            _Service.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder _IBuilder, IWebHostEnvironment _Env)
         {
-            if (env.IsDevelopment())
+            if (_Env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseWebAssemblyDebugging();
+                _IBuilder.UseDeveloperExceptionPage();
+                _IBuilder.UseWebAssemblyDebugging();
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                _IBuilder.UseExceptionHandler("/Error");
             }
 
-            app.UseBlazorFrameworkFiles();
-            app.UseStaticFiles();
+            _IBuilder.UseBlazorFrameworkFiles();
+            _IBuilder.UseStaticFiles();
 
-            app.UseRouting();
+            _IBuilder.UseRouting();
 
-            app.UseEndpoints(endpoints =>
+            _IBuilder.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
-                endpoints.MapFallbackToFile("index.html");
+                endpoints.MapFallbackToPage("Host");
             });
         }
     }
